@@ -14,3 +14,14 @@ def read_file(file_name):
     content = [x.strip() for x in content]
     print(content)
     return content
+
+
+def write_file(file_name):
+    """
+    Create a file and returns the reference of it
+    :param file_name: The relative path of the file to be created
+    :return: The reference of the created file
+    """
+    file_name = os.path.join(dir_name, file_name)
+    file = open(file_name, "w+")
+    return file
