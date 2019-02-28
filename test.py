@@ -1,8 +1,7 @@
 import file_parser
 
 file_names = [
-    "input/easy.input",
-    "input/medium.input"
+    "input/a_example.txt"
 ]
 lines_per_file = {}
 for file_name in file_names:
