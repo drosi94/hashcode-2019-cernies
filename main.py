@@ -5,6 +5,7 @@ total_photos = lines[0]
 photos_list = lines[1:]
 print(total_photos)
 i = 0
+photos = {}
 for photo in photos_list:
     line = photo.split(' ')
     photo_id = i
@@ -14,4 +15,6 @@ for photo in photos_list:
     print(photo_id)
     print(photo_type)
     print(tags)
+    photos[photo_id] = [photo_type, tags]
     i += 1
+print(photos)
